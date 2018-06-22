@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Bureau/Serveur tera/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Bureau/Serveur tera/openauth-1.0.3-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="D:/Bureau/Serveur tera/openlauncherlib-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/Bureau/Serveur tera/s-update-3.1.0-BETA.jar"/>
+	<classpathentry kind="lib" path="D:/Bureau/Serveur tera/swinger-1.0.0-BETA.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
