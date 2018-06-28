@@ -62,7 +62,7 @@ public class Launcher extends JFrame
 	
 	private static void displayStatic() 
 	{
-		instance.setTitle("ParadoxalServer");
+		instance.setTitle("Launcher Paradoxal");
 		instance.setSize(975,625);
 		instance.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		instance.setLocationRelativeTo(null);
@@ -101,7 +101,7 @@ public class Launcher extends JFrame
 			public void run() {
 				while(!this.isInterrupted()) {
 					if(BarAPI.getNumberOfFileToDownload() ==0 ) {
-						Launcher.getinstance().getLauncherPanel().setInfoLabel("Vérification des fichiers");
+						Launcher.getinstance().getLauncherPanel().setInfoLabel("VÃ©rification des fichiers");
 						continue;
 					}
 					
@@ -111,7 +111,7 @@ public class Launcher extends JFrame
 					Launcher.getinstance().getLauncherPanel().getprogressbar().setMaximum(max);
 					Launcher.getinstance().getLauncherPanel().getprogressbar().setValue(val);
 					
-					Launcher.getinstance().getLauncherPanel().setInfoLabel("Téléchargement des fichiers "+BarAPI.getNumberOfDownloadedFiles()+" / "+BarAPI.getNumberOfFileToDownload()+ " - "+Swinger.percentage(val, max) + "%"); 
+					Launcher.getinstance().getLauncherPanel().setInfoLabel("TÃ©lÃ©chargement des fichiers "+BarAPI.getNumberOfDownloadedFiles()+" / "+BarAPI.getNumberOfFileToDownload()+ " - "+Swinger.percentage(val, max) + "%"); 
 				}
 			}
 		};

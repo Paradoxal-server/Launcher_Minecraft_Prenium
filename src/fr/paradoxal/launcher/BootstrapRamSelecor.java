@@ -23,7 +23,7 @@ import fr.theshark34.openlauncherlib.util.ramselector.RamSelector;
 @SuppressWarnings("serial")
 public class BootstrapRamSelecor extends AbstractOptionFrame implements ActionListener{
 
-	private JLabel title = new JLabel("Paramétrage", SwingConstants.CENTER);
+	private JLabel title = new JLabel("Paramï¿½trage", SwingConstants.CENTER);
 	private JLabel ramlabel;
 	private JLabel var;
 	private JComboBox<String> ramBox;
@@ -31,6 +31,7 @@ public class BootstrapRamSelecor extends AbstractOptionFrame implements ActionLi
 	public static final File P_B_DIR = new File(GameDirGenerator.createGameDir("paradoxal"),"Launcher");
 	public static File crack = new File(P_B_DIR,"crack.txt");
 	public static File premiun = new File(P_B_DIR,"premiun.txt");
+	public static File saver = new File(P_B_DIR,"launcher.properties");
 	
 	private JButton ok;
 	private JButton change;
@@ -56,7 +57,7 @@ public class BootstrapRamSelecor extends AbstractOptionFrame implements ActionLi
 		title.setBounds(5, 1, 250, 50);
 		this.add(title);
 		
-		ramlabel = new JLabel("Memoire");
+		ramlabel = new JLabel("MÃ©moire");
 		ramlabel.setForeground(Color.WHITE);
 		ramlabel.setFont(ramlabel.getFont().deriveFont(19F));
 		ramlabel.setBounds(this.getWidth()/2-45, 40, 209, 25);
@@ -111,7 +112,8 @@ public class BootstrapRamSelecor extends AbstractOptionFrame implements ActionLi
 		}else if(e.getSource()==change) {
 			crack.delete();
 			premiun.delete();
-			JOptionPane.showMessageDialog(this, "Merci de redémarrer votre launcher", "Action", JOptionPane.INFORMATION_MESSAGE);
+			saver.delete();
+			JOptionPane.showMessageDialog(this, "Merci de redÃ©marrer votre launcher", "Action", JOptionPane.INFORMATION_MESSAGE);
 			this.setVisible(false);
 			getSelector().save();
 		}

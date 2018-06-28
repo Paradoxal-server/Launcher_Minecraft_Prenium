@@ -12,7 +12,7 @@ public class InfoLauncher
 	public static final String MC_Version = "1.12.2";
 	public static final String NAME = "paradoxal";
 	public static final String DATE = "21/06/18";
-	public static final String URL_UPDATE = "http://paradoxalserveur.000webhostapp.com/launcher/";
+	public static final String URL_UPDATE = "http://paradoxalserveur.000webhostapp.com/minecraft/";
 	public static final String COPYHIGHT_LAUNCHER ="Paradoxal";
 	public static final String COPYRIGHT_Libs="Theshark34";
 	public static final String WEB_SITE ="";

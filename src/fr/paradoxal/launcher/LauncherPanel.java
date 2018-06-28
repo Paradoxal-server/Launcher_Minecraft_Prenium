@@ -105,7 +105,7 @@ public class LauncherPanel extends JPanel implements SwingerEventListener {
 			setFieldEnabled(false);
 			if(usernamefield.getText().replaceAll(" ", "").length()==0 || passwordField.getText().length()==0)
 			{
-				JOptionPane.showMessageDialog(this, "Erreur, veuilliez entrée un Pseudo et un mot de passe valides", "Erreur", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(this, "Erreur, veuilliez entrÃ©e un Pseudo et un mot de passe valides", "Erreur", JOptionPane.ERROR_MESSAGE);
 				setFieldEnabled(true);
 				return;
 			}
@@ -125,7 +125,7 @@ public class LauncherPanel extends JPanel implements SwingerEventListener {
 						Launcher.update();
 					} catch (Exception e) {
 						Launcher.interruptThread();
-						Launcher.getCrashReporter().catchError(e, "Impossible de mettre à jour Paradoxal !");			
+						Launcher.getCrashReporter().catchError(e, "Impossible de mettre Ã  jour Paradoxal !");			
 						setFieldEnabled(true);
 						return;
 					}
